@@ -49,8 +49,9 @@ function downloadText() {
   window.URL.revokeObjectURL(url);
 }
 
-function clearPage() {
-  document.body.innerHTML = '';
+function resetPage() {
+  // Reload the current page
+  window.location.reload();
 }
 
 function run() {
