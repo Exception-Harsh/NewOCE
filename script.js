@@ -49,6 +49,10 @@ function downloadText() {
   window.URL.revokeObjectURL(url);
 }
 
+function clearPage() {
+  document.body.innerHTML = '';
+}
+
 function run() {
   let htmlCode = document.getElementById("html-code").value;
   let cssCode = document.getElementById("css-code").value;
