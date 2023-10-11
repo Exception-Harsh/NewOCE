@@ -1,4 +1,4 @@
-function downloadText() {
+function downloadText0() {
   var textarea = document.getElementById("html-code");
 
   var textValue = textarea.value;
@@ -15,7 +15,7 @@ function downloadText() {
   window.URL.revokeObjectURL(url);
 }
 
-function downloadText() {
+function downloadText1() {
   var textarea = document.getElementById("css-code");
 
   var textValue = textarea.value;
@@ -32,7 +32,7 @@ function downloadText() {
   window.URL.revokeObjectURL(url);
 }
 
-function downloadText() {
+function downloadText2() {
   var textarea = document.getElementById("js-code");
 
   var textValue = textarea.value;
@@ -49,7 +49,22 @@ function downloadText() {
   window.URL.revokeObjectURL(url);
 }
 
-function resetPage() {
+function reset0() {
+  var textarea = document.getElementById("html-code");
+  textarea.value = "";
+}
+
+function reset1() {
+  var textarea = document.getElementById("css-code");
+  textarea.value = "";
+}
+
+function reset2() {
+  var textarea = document.getElementById("js-code");
+  textarea.value = "";
+}
+
+function resetpage() {
   // Reload the current page
   window.location.reload();
 }
